@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Login Page Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔐 Fake Login Page Detector</h1>
+<h3>Total Scans: <span id="scanCount">0</span></h3>
+    <input type="text" id="urlInput"
+    placeholder="Enter Website URL">
+
+    <button onclick="checkURL()">
+        Check URL
+    </button>
+<progress id="riskBar" value="0" max="100"></progress>
+
+<br><br>
+
+    <div id="result"></div>
+    <div id="recommendation"></div>
+    <h3>Cyber Safety Tips</h3>
+
+
+<ul>
+    <li>Never share OTP.</li>
+    <li>Check website URLs carefully.</li>
+    <li>Avoid clicking unknown links.</li>
+    <li>Use two-factor authentication.</li>
+</ul>
+</div>
+<button onclick="clearHistory()">
+🗑 Clear History
+</button>
+<h3>Scan History</h3>
+
+<table id="historyTable">
+  <tr>
+    <th>URL</th>
+    <th>Risk Score</th>
+  </tr>
+</table>
+<script src="script.js"></script>
+<hr>
+
+<p>
+Developed by Ishika Saxena |
+Cyber Security Mini Project
+</p>
+</body>
+</html>
